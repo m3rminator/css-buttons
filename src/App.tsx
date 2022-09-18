@@ -1,26 +1,32 @@
 import React from 'react';
-import logo from './logo.svg';
+import styled from 'styled-components'
+import First from './Buttons/1st'
+import Second from './Buttons/2st'
+import Third from './Buttons/3st'
+import Forth from './Buttons/4st'
+import Fifth from './Buttons/5st'
+import Sixth from './Buttons/6st'
+import Seven from './Buttons/7st'
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container>
+      <First />
+      <Second />
+      <Third />
+      <Forth />
+      <Fifth />
+      <Sixth />
+      <Seven />
+    </Container>
   );
 }
 
+const Container = styled.div`
+display: flex;
+width: 100%;
+flex-wrap: wrap;
+justify-content: space-between;
+`
 export default App;
