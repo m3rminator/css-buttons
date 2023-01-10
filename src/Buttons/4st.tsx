@@ -15,6 +15,7 @@ const Container = styled.div`
 
 `
 const Button = styled.button`
+width: 200px;
 padding: 15px 35px;
 margin-bottom: 1rem;
 color: #FF6D1B;
@@ -30,6 +31,7 @@ transition: All 1s;
 }
 &:hover {
     font-weight: bold;
+    width: 230px;
     letter-spacing: 5px;
     border: 5px #FF6D1B solid;
  }

@@ -1,15 +1,15 @@
 import React from 'react';
 import styled from 'styled-components'
 
-function First() {
-    return (
-        <Container>
-            <Button>Hover me</Button>
-        </Container>
-    );
+function Nine() {
+  return (
+    <Container>
+      <Button>Hover me</Button>
+    </Container>
+  );
 }
 
-export default First;
+export default Nine;
 
 const Container = styled.div`
 
@@ -17,29 +17,31 @@ const Container = styled.div`
 const Button = styled.button`
 width: 200px;
 height: 60px;
-color: white;
+color: #FF6D1B;
 letter-spacing: -1px;
-Border: 2px white solid;
+text-transform: uppercase;
+Border: 2px #FF6D1B solid;
+font-size: 20px;
 background-color: #282828;
 margin-bottom: 1rem;
+background-color: #282828;
 position: relative;
 overflow: hidden;
 z-index: 2;
 transition: All 1s;
 &::before {
   content: '';
-  border-radius: 0% 50% 50% 50%;
+  border-radius: 0 0 50% 50%;
   position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
   left: 0;
   top:0;
-  width: 5%;
+  width: 100%;
   height: 0%;
-  transform-origin: Top left;
-  rotate: (90deg);
-  transition: all 0.5s;
+  transform-origin: Top;
+  transition: all 1s;
   background-color: #FF6D1B;
   z-index: -1;
 }
@@ -47,12 +49,10 @@ transition: All 1s;
     color: white;
   &::before {
     border-radius: 0;
-    rotate: (0deg);
-    width: 200%;
+    width: 100%;
     height: 190%;
   }
 }
 }
 `
-
 
